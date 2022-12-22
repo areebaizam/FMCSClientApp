@@ -1,0 +1,14 @@
+<mat-sidenav-container style="height: 100%;">
+  <mat-sidenav [(opened)]="isSideNavOpen">
+    <div class="brand"><mat-icon>mosque</mat-icon> <span class="label">F.C.M.S</span></div>
+    <div class="flex-column">
+      <ng-container *ngFor="let node of nodes | filterBoolean:'visible':true">
+        <tap-btn-icon-nav [node]="node" (emitBtnIconRowEvent)="emitBtnIconRowEvent(node, $event)"></tap-btn-icon-nav>
+      </ng-container>
+    </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet> </router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

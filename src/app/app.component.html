@@ -1,0 +1,16 @@
+<ng-container *ngIf="!isMobileViewPort else mobileViewPort">
+  <tap-header class="main-body-header container-fluid">
+  </tap-header>
+  <div class="main-body-wrapper container-fluid">
+    <router-outlet> </router-outlet>
+  </div>
+</ng-container>
+<ng-template #mobileViewPort>
+  <!-- <div class="main-side-wrapper container-fluid">
+    <router-outlet> </router-outlet>
+  </div> -->
+  <div class="main-side-wrapper container-fluid">
+    <tap-sidenav [isSideNavOpen]="isSideNavOpen"></tap-sidenav>
+  </div>
+  <tap-footer class="main-body-footer-bottom-fixed container-fluid"></tap-footer>
+</ng-template>

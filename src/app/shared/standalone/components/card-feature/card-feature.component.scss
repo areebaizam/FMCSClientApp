@@ -1,0 +1,53 @@
+@import '../../../styles/global-variables.scss';
+
+.card {
+  width: 270px;
+  height: fit-content;
+  padding: 20px 10px;
+  text-align: center;
+  transition: background-color 4.8s ease;
+  transition: color 1.2s ease;
+  color: $text-color-primary;
+  padding: 10px;
+}
+
+.card:hover {
+  background-color: $overlay-color-primary;
+  color: $background-color-secondary;
+
+  .card-header-image {
+    border: 5px solid $background-color-secondary;
+    background-color: $overlay-color-primary;
+    background-image: url('/../assets/images/svg/quran-rehal-light.svg');
+    -webkit-box-shadow: 8px 10px 28px 5px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 8px 10px 28px 5px rgba(0, 0, 0, 0.32);
+    box-shadow: 8px 10px 28px 5px rgba(0, 0, 0, 0.32);
+  }
+}
+
+.card-title, .card-content {
+  font-family: 'El Messiri';
+}
+
+.mat-mdc-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header-image {
+  height: 105px;
+  width: 105px;
+  background-image: url('/../assets/images/svg/quran-rehal.svg');
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f5f5;
+  border: 5px solid $overlay-color-primary;
+ --webkit-box-shadow: 8px 7px 85px -16px rgba(0, 0, 0, 0.32);
+ -moz-box-shadow: 8px 7px 85px -16px rgba(0, 0, 0, 0.32);
+ box-shadow: 8px 7px 85px -16px rgba(0, 0, 0, 0.32);
+  transition: background-color 0.8s ease;
+  transition: background-image 4s ease;
+  transition: border 1s ease;
+}

@@ -1,0 +1,81 @@
+@import './global-variables.scss';
+
+.main-body-header {
+  height: $main-header-height;
+  position: absolute;
+  top: 0;
+}
+
+.main-body-wrapper {
+  height: $main-body-wrapper-height;
+  top: $main-header-height-offset;
+  position: absolute;
+  overflow-y: auto;
+  background-color: $background-color-secondary;
+  z-index: -1;
+}
+
+.main-side-wrapper {
+  height: $main-side-wrapper-height;
+  top: $app-header-height;
+  bottom: $main-footer-height;
+  position: absolute;
+  overflow-y: auto;
+  background-color: $background-color-secondary;
+  z-index: -1;
+}
+
+.main-body-footer-bottom-fixed {
+  height: $main-footer-height;
+  position: fixed;
+  bottom: 0;
+}
+
+.flex-row-center,
+.flex-row-around,
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 1vh;
+}
+
+.flex-row-center {
+  justify-content: center;
+}
+
+.flex-row-around {
+  justify-content: space-around;
+}
+
+.flex-row-between {
+  justify-content: space-between;
+}
+
+.flex-column-start,
+.flex-column-center,
+.flex-column-around,
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // padding: 0 $main-content-padding;
+}
+
+.flex-column-start {
+  justify-content: flex-start;
+}
+
+.flex-column-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column-around {
+  justify-content: space-around;
+}
+
+.flex-column-between {
+  justify-content: space-between;
+}

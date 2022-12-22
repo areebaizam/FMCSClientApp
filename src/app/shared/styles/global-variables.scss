@@ -1,0 +1,44 @@
+// Layout size
+$page-wrapper-height:100%;
+$page-wrapper-width:100%;
+$main-header-height:50px;
+$main-footer-height:65px; //Dependency mat-toolbar-single-row
+
+$app-header-height:0px;//for secondary header
+$app-footer-height:0px;//for secondary footer
+
+// Calculated layout
+// CAUTION: Keep space between '-' minus in calc function
+$main-header-height-offset: calc(#{$main-header-height} + #{$app-header-height});
+$main-body-wrapper-height: calc(#{$page-wrapper-height} - #{$main-header-height-offset});
+$main-side-wrapper-height: calc(#{$page-wrapper-height} - #{$app-header-height} - #{$main-footer-height});
+
+$main-content-padding: 10vh;
+
+//Screen Sizes
+// Font Size
+$font-size-xs: 8pt;
+$font-size-s: 9pt;
+$font-size-m: 10pt;
+$font-size-1: 11pt;
+$font-size-xl: 12pt;
+$font-size-xx1: 13pt;
+$font-size-xxxl: 14pt;
+
+// Font weight
+$font-weight-light: 200;
+$font-weight-semilight: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+//Colors
+$white:#ffffff;
+
+$text-color-primary:#E7A61A;
+$text-color-secondary:#441A05;
+$overlay-color-primary: $text-color-primary;
+
+
+$background-color-primary:#cbcddeae;
+$background-color-secondary:#eff1fa;

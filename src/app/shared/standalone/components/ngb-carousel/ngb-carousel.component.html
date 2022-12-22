@@ -1,0 +1,41 @@
+
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[0]" alt="Random first slide" class="img-fluid">
+    </div>
+    <div class="carousel-caption">
+      <h3 style="font-family:El Messiri;">Welcome to the Fraser Musallah</h3>
+      <h3>First Slide</h3>
+      <h3>First Slide</h3>
+      <button mat-raised-button color="primary" aria-label="home"  style="font-size:1em ;"> FMCS</button>
+
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[1]" alt="Random first slide" class="img-fluid">
+    </div>
+    <div class="carousel-caption">
+      <h3>2 Slide</h3>
+      <h3>2 Slide</h3>
+      <h3>2 Slide</h3>
+      <h3>First Slide</h3>
+      <button mat-button color="primary" aria-label="home"  style="font-size:1em ;"> FMCS</button>
+
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[2]" alt="Random first slide" class="img-fluid">
+    </div>
+    <div class="carousel-caption">
+      <h3>First Slide</h3>
+      <button mat-button color="primary" aria-label="home"  style="font-size:1em ;"> FMCS</button>
+
+    </div>
+  </ng-template>
+
+</ngb-carousel>

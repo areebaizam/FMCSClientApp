@@ -1,0 +1,16 @@
+<button mat-button *ngIf="node.type else eventBtn;" aria-label="navigation" routerLink={{node.url}}
+  routerLinkActive="route-active" [routerLinkActiveOptions]="{exact: true}" class="icon-btn">
+  <div class="flex-row-center">
+    <mat-icon>{{node.iconClassName}}</mat-icon>
+    <span class="icon-label">{{node.name |uppercase}}</span>
+  </div>
+</button>
+
+<ng-template #eventBtn>
+  <button mat-button aria-label="navigation" class="icon-btn" (click)="handleBtnClick($event)">
+    <div class="flex-row-center">
+      <mat-icon>{{node.iconClassName}}</mat-icon>
+      <span class="icon-label">{{node.name |uppercase}}</span>
+    </div>
+  </button>
+</ng-template>

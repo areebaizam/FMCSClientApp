@@ -1,0 +1,7 @@
+<mat-toolbar class="mat-elevation-z2">
+  <button mat-button color="primary" aria-label="home" [routerLink]="['']" style="font-size:1em ;"> FMCS</button>
+  <span class="spacer" aria-hidden="true"></span>
+  <ng-container *ngFor="let node of nodes | filterBoolean:'visible':true">
+    <tap-btn-icon-row [node]="node" (emitBtnIconEvent)="emitBtnIconEvent(node, $event)"></tap-btn-icon-row>
+  </ng-container>
+</mat-toolbar>
