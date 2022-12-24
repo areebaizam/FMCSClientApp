@@ -59,3 +59,5 @@ Run `ng g c standalone\components\BtnIconNav --standalone --skip-tests` from `sh
 Run `ng g c standalone\components\NgbCarousel --standalone --skip-tests` from `shared` folder
 Run `ng g c standalone\components\PrayerTime --standalone --skip-tests` from `shared` folder
 
+## Home Standalone containers
+Run `ng g c FeaturesContainer  --standalone --skip-tests` from `home` folder

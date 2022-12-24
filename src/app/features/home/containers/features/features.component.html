@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="flex-column-center my-3">
+    <span class="main-sub-title">Our Services</span>
+    <span class="main-title">Serving Community</span>
+    <div class="separator-img"></div>
+  </div>
+
+  <div class="row card-wrapper">
+    <!-- TODO Fix this -->
+    <!-- <tap-small-widgets><tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature></tap-small-widgets>
+    <tap-small-widgets><tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature></tap-small-widgets>
+    <tap-small-widgets><tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature></tap-small-widgets>
+    <tap-small-widgets><tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature></tap-small-widgets> -->
+    <ng-container *ngFor="let card of cards | filterBoolean:'visible':true">
+      <div class="card-margin col-sm-12 col-md-6 col-lg-3">
+        <tap-card-feature [card]="card" class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature>
+      </div>
+    </ng-container>
+    <!-- <div class="card-margin col-sm-12 col-md-6 col-lg-3">
+      <tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature>
+    </div>
+    <div class="card-margin col-sm-12 col-md-6 col-lg-3">
+      <tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature>
+    </div>
+    <div class="card-margin col-sm-12 col-md-6 col-lg-3">
+      <tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature>
+    </div>
+    <div class="card-margin col-sm-12 col-md-6 col-lg-3">
+      <tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature>
+    </div>
+    <div class="card-margin col-sm-12 col-md-6 col-lg-3">
+      <tap-card-feature class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-feature>
+    </div> -->
+  </div>
+</div>

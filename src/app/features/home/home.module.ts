@@ -2,22 +2,23 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '@tap/shared/shared.module';
 
-//StandAlone Components
-import {
-  CardFeatureContainerComponent,
-  IntroComponent,
-  NgbCarouselComponent,
-  PrayerTimeComponent,
-} from '@tap/standalone/components';
+//Shared StandAlone Components
+import { NgbCarouselComponent } from '@tap/standalone/components';
+//Shared StandAlone Containers
+import { SmallWidgetsComponent } from '@tap/standalone/containers';
 
 import { HomeComponent } from './home.component';
 
-const STD_COMPONENTS = [
-  CardFeatureContainerComponent,
-  IntroComponent,
-  NgbCarouselComponent,
-  PrayerTimeComponent,
-];
+//StandAlone Containers
+import {
+  FeaturesComponent,
+  MainComponent,
+  SupportComponent
+} from './containers';
+
+const STD_SHRD_COMPONENTS = [NgbCarouselComponent, SmallWidgetsComponent];
+
+const STD_CONTAINERS = [FeaturesComponent, MainComponent, SupportComponent];
 
 const routes: Routes = [
   {
@@ -42,6 +43,11 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [HomeComponent],
-  imports: [RouterModule.forChild(routes), SharedModule, ...STD_COMPONENTS],
+  imports: [
+    RouterModule.forChild(routes),
+    SharedModule,
+    ...STD_SHRD_COMPONENTS,
+    ...STD_CONTAINERS,
+  ],
 })
 export class HomeModule {}

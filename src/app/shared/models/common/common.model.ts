@@ -49,3 +49,11 @@ export class Card {
   content?: string | '';
   visible?: boolean = true;
 }
+
+export class FeatureCard{
+  order: number = -1;
+  header?: string | '';
+  iconClassName?: string | undefined;
+  content?: string | '';
+  visible?: boolean = true;
+}
