@@ -19,9 +19,8 @@
 .main-sub-title,
 .main-heading,
 .main-text,
-.prayer-title,
-.prayer-heading,
-.prayer-sub-heading {
+.content-text,
+.code-text {
   font-family: 'El Messiri';
 }
 
@@ -53,37 +52,27 @@
   word-spacing: 3px;
 }
 
-.prayer-heading,
-.prayer-title,
-.prayer-sub-heading {
-  min-width: 85px;
+.content-text {
+  font-size: 16px;
 }
 
-.prayer-title {
-  text-shadow: 0px 4px 4px rgba(231, 166, 26, 0.39);
+.code-text {
+  font-size: 16px;
 }
+
+// .prayer-title {
+//   text-shadow: 0px 4px 4px rgba(231, 166, 26, 0.39);
+// }
 
 .text-border {
   border-bottom: 1px dashed $text-color-primary;
-  margin-bottom: 10px;
+  // height: 3px;
 }
+
 .text-border:last-child {
   border-bottom: none;
 }
 
-.prayer-heading,
-.prayer-sub-heading {
-  font-size: 20px;
-  line-height: 2;
-}
-
-.prayer-heading {
-  color: $text-color-primary;
-}
-
-.prayer-sub-heading {
-  color: $text-color-secondary;
-}
 
 .divider {
   height: 2rem;
@@ -100,4 +89,35 @@
 
 a {
   color: $text-color-primary;
+}
+
+/* On screens that are 768px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .main-title {
+    font-size: 30px;
+  }
+
+  .main-sub-title {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .main-text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .content-text {
+    font-size: 14px;
+  }
+
+  .code-text {
+    font-size: 14px;
+  }
+
+  .separator-img {
+    width: 120px;
+    height: 10px;
+  }
 }

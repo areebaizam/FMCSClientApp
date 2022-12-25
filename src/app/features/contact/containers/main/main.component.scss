@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  padding: 0 50px;
+  min-height: 100%;
+  padding: 0 5vw;
   background: linear-gradient(0deg, rgba(231, 166, 26, 0.10127801120448177) 0%, rgba(250, 250, 250, 0.8715861344537815) 100%);
 }
 
@@ -19,6 +19,6 @@
   box-shadow: 8px 10px 28px 5px rgba(0, 0, 0, 0.32);
 
   .card-margin {
-    padding: 0 50px;
+    padding: 0 5vw;
   }
 }
