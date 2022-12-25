@@ -1,15 +1,13 @@
 <div class="wrapper">
-  <div class="flex-column-center pt-3">
-    <span class="main-sub-title">Help Us</span>
-    <span class="main-title">We Need Your Support</span>
-    <div class="separator-img"></div>
-  </div>
+  <tap-topic-heading [heading]="headings[1]"></tap-topic-heading>
   <div class="row card-wrapper">
     <div class="card-margin col-sm-12 col-md-6 col-lg-4">
-      <tap-card-donate [card]="cards[0]" class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-donate>
+      <tap-card-donate [card]="cards[0]" class="card" tapMatElevation
+        [defaultElevation]="defaultElevation"></tap-card-donate>
     </div>
     <div class="card-margin col-sm-12 col-md-6 col-lg-4">
-      <tap-card-volunteer [card]="cards[1]" class="card" tapMatElevation [defaultElevation]="defaultElevation"></tap-card-volunteer>
+      <tap-card-volunteer [card]="cards[1]" class="card" tapMatElevation
+        [defaultElevation]="defaultElevation"></tap-card-volunteer>
     </div>
   </div>
 </div>

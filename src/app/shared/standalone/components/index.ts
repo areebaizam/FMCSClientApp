@@ -8,4 +8,5 @@ export * from './card-volunteer/card-volunteer.component';
 export * from './intro/intro.component';
 export * from './ngb-carousel/ngb-carousel.component';
 export * from './prayer-time/prayer-time.component';
+export * from './topic-heading/topic-heading.component';
 

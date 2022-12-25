@@ -5,7 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // Project Modules
 import { MaterialModule } from '@tap/material/material.module';
 //Pipes
-import { FilterBooleanPipe } from './pipes';
+import { FilterBooleanPipe } from './standalone/pipes';
 
 
 const SHARED_MODULES = [
@@ -18,17 +18,19 @@ const SHARED_MODULES = [
 ];
 const SHARED_COMPONENTS = [];
 const SHARED_DIRECTIVES = [];
-const SHARED_PIPES = [FilterBooleanPipe];
+const SHARED_PIPES = [];
+const STD_PIPES = [FilterBooleanPipe];
 
 @NgModule({
   declarations: [
     // ...SHARED_COMPONENTS,
     // ...SHARED_DIRECTIVES,
-    ...SHARED_PIPES,
+    // ...SHARED_PIPES,
   ],
   imports: [
     CommonModule,
     ...SHARED_MODULES,
+    STD_PIPES
     // ...SHARED_COMPONENTS,
     // ...SHARED_DIRECTIVES,
   ],
@@ -37,7 +39,8 @@ const SHARED_PIPES = [FilterBooleanPipe];
     ...SHARED_MODULES,
     // ...SHARED_COMPONENTS,
     // ...SHARED_DIRECTIVES,
-    ...SHARED_PIPES,
+    // ...SHARED_PIPES,
+    STD_PIPES
   ],
 })
 export class SharedModule {}

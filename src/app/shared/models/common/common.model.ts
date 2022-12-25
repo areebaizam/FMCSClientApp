@@ -4,7 +4,7 @@ export class MenuNode {
   parentId?: number = 0;
   order: number = -1;
   name?: string | '';
-  type: number = 0;//ENUM
+  type: number = 0; //ENUM
   description?: string;
   url?: string | undefined;
   iconClassName?: string | undefined;
@@ -16,7 +16,6 @@ export enum eMenuNodeType {
   EVENT = 0,
   ROUTE = 1,
 }
-
 
 //Routes
 export enum eRouteURL {
@@ -32,12 +31,10 @@ export enum eRouteActionURL {
   update = 'update',
 }
 
-
 export enum eMatElevation {
   DEFAULT_ELEVATION = 2,
   RAISED_ELEVATION = 8,
 }
-
 
 export class Card {
   id?: number = 0;
@@ -50,10 +47,15 @@ export class Card {
   visible?: boolean = true;
 }
 
-export class FeatureCard{
+export class FeatureCard {
   order: number = -1;
   header?: string | '';
   iconClassName?: string | undefined;
   content?: string | '';
   visible?: boolean = true;
+}
+
+export class TopicHeading {
+  title?: string | '';
+  subtitle?: string | '';
 }
