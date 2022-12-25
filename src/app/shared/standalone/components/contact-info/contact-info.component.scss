@@ -1,0 +1,25 @@
+@import './../../../../shared/styles/global-variables.scss';
+
+.contact-icon,
+.contact-icon-label {
+  font-family: 'El Messiri';
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.contact-icon {
+  margin: 5px 5px 4px 0px;
+  color: $text-color-primary;
+}
+
+// .contact-icon-label{
+//   color: inherit;
+// }
+// .contact-icon-label:hover {
+//   color: $text-color-primary;
+// }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

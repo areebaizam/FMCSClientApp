@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '@tap/shared/shared.module';
 import { ContactComponent } from './contact.component';
+import { MainComponent } from './containers/';
 
+const STD_CONTAINERS = [MainComponent];
 const routes: Routes = [
   {
     path: '',
@@ -31,6 +33,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes),
     SharedModule,
+    ...STD_CONTAINERS,
   ]
 })
 export class ContactModule { }

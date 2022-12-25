@@ -31,6 +31,7 @@
   bottom: 0;
 }
 
+.flex-row,
 .flex-row-center,
 .flex-row-around,
 .flex-row-between {
@@ -70,6 +71,7 @@
 .flex-column-center {
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .flex-column-around {

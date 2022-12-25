@@ -58,4 +58,5 @@ export class FeatureCard {
 export class TopicHeading {
   title?: string | '';
   subtitle?: string | '';
+  content?: string | '';
 }

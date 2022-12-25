@@ -1,0 +1,8 @@
+@import '../../../../shared/styles/global-variables.scss';
+.wrapper {
+  background-color: $background-color-secondary;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: 'El Messiri';
+}

@@ -4,8 +4,8 @@ $page-wrapper-width:100%;
 $main-header-height:50px;
 $main-footer-height:65px; //Dependency mat-toolbar-single-row
 
-$app-header-height:0px;//for secondary header
-$app-footer-height:0px;//for secondary footer
+$app-header-height:0px; //for secondary header
+$app-footer-height:0px; //for secondary footer
 
 // Calculated layout
 // CAUTION: Keep space between '-' minus in calc function
@@ -40,5 +40,5 @@ $text-color-secondary:#441A05;
 $overlay-color-primary: $text-color-primary;
 
 
-$background-color-primary:#cbcddeae;
-$background-color-secondary:#eff1fa;
+$background-color-primary:#fafafa;
+$background-color-secondary:rgba(231, 166, 26, 0.1);

@@ -16,7 +16,6 @@ const EAGER_MODULES = [RoutingModule, CoreModule, SharedModule];
     // RoutingModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule, //CAVEAT: Must be in same module as BrowserModule instead of material module
-
     ...EAGER_MODULES
   ],
   providers: [],

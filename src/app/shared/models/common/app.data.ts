@@ -168,13 +168,31 @@ export const topicList = [
   {
     title: 'Welcome to the',
     subtitle: 'Fraserview Muslim Community Services',
+    content:'The Fraserview Musallah is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad.',
   },
   {
     title: 'Help Us',
     subtitle: 'We Need Your Support',
+    content:'',
   },
   {
     title: 'Our Services',
     subtitle: 'Serving Community',
+    content:'',
+  },
+  {
+    title: 'Contact Us',
+    subtitle: 'Get in Touch',
+    content:'',
+  },
+  {
+    title: 'Wish to Volunteer',
+    subtitle: 'Register here',
+    content:'',
+  },
+  {
+    title: 'Your suggestions are welcome...',
+    subtitle: 'Reach out to Us',
+    content:'If you have any query, comment, suggestion or complaint, please use the following information to contact us.',
   },
 ] as Array<TopicHeading>;

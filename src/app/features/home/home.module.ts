@@ -11,14 +11,22 @@ import { HomeComponent } from './home.component';
 
 //StandAlone Containers
 import {
+  ContactComponent,
   FeaturesComponent,
   MainComponent,
-  SupportComponent
+  SupportComponent,
+  HomeFooterComponent,
 } from './containers';
 
 const STD_SHRD_COMPONENTS = [NgbCarouselComponent, SmallWidgetsComponent];
 
-const STD_CONTAINERS = [FeaturesComponent, MainComponent, SupportComponent];
+const STD_CONTAINERS = [
+  ContactComponent,
+  FeaturesComponent,
+  MainComponent,
+  SupportComponent,
+  HomeFooterComponent,
+];
 
 const routes: Routes = [
   {
