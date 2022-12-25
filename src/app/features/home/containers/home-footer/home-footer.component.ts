@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeFooterComponent {
   footerText: string =
-    '©2023 Fraserview Muslim Community Services . All rights reserved. Powered by- ';
+    '©2023 Fraserview Muslim Community Services . All rights reserved.';
 }
