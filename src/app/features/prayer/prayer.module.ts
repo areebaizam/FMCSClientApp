@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '@tap/shared/shared.module';
+import { MainComponent } from '../prayer/containers';
 import { PrayerComponent } from './prayer.component';
 
+const STD_CONTAINERS = [MainComponent];
+
+MainComponent
 const routes: Routes = [
   {
     path: '',
@@ -31,6 +35,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes),
     SharedModule,
+    ...STD_CONTAINERS,
   ]
 })
 export class PrayerModule { }
