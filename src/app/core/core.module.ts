@@ -9,7 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 
-const STD_COMPONENTS = [
+const STD_SHRD_COMPONENTS = [
   BtnIconColComponent,
   BtnIconNavComponent,
   BtnIconRowComponent,
@@ -27,7 +27,7 @@ const CORE_COMPONENTS = [
   imports: [
     RouterModule,
     SharedModule,
-    ...STD_COMPONENTS,
+    ...STD_SHRD_COMPONENTS,
   ],
   exports:[
     ...CORE_COMPONENTS,

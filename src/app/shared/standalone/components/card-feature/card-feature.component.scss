@@ -26,18 +26,6 @@
   }
 }
 
-.card-title {
-  font-family: 'El Messiri';
-}
-
-.card-title{
-  font-size: 24px;
-  color: $text-color-secondary;
-  // line-height: 1;
-  text-shadow: 0px 4px 4px rgba(68, 26, 5, 0.39);
-  transition: color 1s ease;
-}
-
 .mat-mdc-card-header {
   display: flex;
   flex-direction: column;

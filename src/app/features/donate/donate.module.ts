@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '@tap/shared/shared.module';
 import { DonateComponent } from './donate.component';
 
+//StandAlone Containers
+import { MainComponent } from './containers';
+
+const STD_CONTAINERS = [MainComponent];
 const routes: Routes = [
   {
     path: '',
@@ -25,12 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    DonateComponent
-  ],
-  imports: [
-    RouterModule.forChild(routes),
-    SharedModule,
-  ]
+  declarations: [DonateComponent],
+  imports: [RouterModule.forChild(routes), SharedModule, ...STD_CONTAINERS],
 })
-export class DonateModule { }
+export class DonateModule {}

@@ -37,25 +37,25 @@ export const footerMenuList = [
     name: 'menu',
     type: eMenuNodeType.EVENT,
     url: '',
-    visible: true,
+    visible: false,
   },
   {
     order: 5,
-    iconClassName: 'contact',
+    iconClassName: 'call',
     name: 'contact',
     type: eMenuNodeType.ROUTE,
     url: 'contact', //TODO Change with URL ENum
-    visible: false,
+    visible: true,
   },
 ] as Array<MenuNode>;
 
 export const headerMenuList = [
   {
     order: 1,
-    iconClassName: 'alarm',
-    name: 'prayers',
+    iconClassName: 'home',
+    name: 'home',
     type: eMenuNodeType.ROUTE,
-    url: eRouteURL.PRAYER,
+    url: eRouteURL.HOME,
     visible: true,
   },
   {
@@ -68,6 +68,14 @@ export const headerMenuList = [
   },
   {
     order: 3,
+    iconClassName: 'alarm',
+    name: 'prayers',
+    type: eMenuNodeType.ROUTE,
+    url: eRouteURL.PRAYER,
+    visible: true,
+  },
+  {
+    order: 4,
     iconClassName: 'perm_phone_msg',
     name: 'contact',
     type: eMenuNodeType.ROUTE,
@@ -75,12 +83,12 @@ export const headerMenuList = [
     visible: true,
   },
   {
-    order: 4,
+    order: 5,
     iconClassName: 'manage_accounts',
     name: 'profile',
     type: eMenuNodeType.ROUTE,
     url: 'profile', //TODO Change with URL ENum
-    visible: true,
+    visible: false,
   },
 ] as Array<MenuNode>;
 
@@ -94,15 +102,7 @@ export const sidenavMenuList = [
     visible: true,
   },
   {
-    order: 1,
-    iconClassName: 'diversity_2',
-    name: 'volunteer',
-    type: eMenuNodeType.ROUTE,
-    url: eRouteURL.DONATE,
-    visible: true,
-  },
-  {
-    order: 3,
+    order: 2,
     iconClassName: 'perm_phone_msg',
     name: 'contact',
     type: eMenuNodeType.ROUTE,
@@ -168,7 +168,7 @@ export const topicList = [
   {
     title: 'Welcome to the',
     subtitle: 'Fraserview Muslim Community Services',
-    content:'The Fraserview Musallah is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad.',
+    content:'The Fraserview Musallah is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad ﷺ.',
   },
   {
     title: 'Help Us',
@@ -187,12 +187,17 @@ export const topicList = [
   },
   {
     title: 'Wish to Volunteer',
-    subtitle: 'Register here',
+    subtitle: 'Write to Us',
     content:'',
   },
   {
     title: 'Your suggestions are welcome...',
     subtitle: 'Reach out to Us',
-    content:'If you have any query, comment, suggestion or complaint, please use the following information to contact us.',
+    content:'If you have any query, comment, suggestion or complaint, or would like to enroll for volunteering, please use the following information or submit the form to contact us.',
+  },
+  {
+    title: 'Make a Donation',
+    subtitle: 'We need your Support',
+    content:'',
   },
 ] as Array<TopicHeading>;
